@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Porfolio</title>
+</head>
+<body>
+    <!-- Secciòn INICIO -->
+    <span class="sombra">
+        <section id="inicio" class="inicio">
+            <div class="contenido">
+                <header>
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                        <h1>WILLIAMS</h1>
+                    </div>
+                    <nav id="nav">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#servicios">Servicios</a>
+                        <a href="#trabajos">Trabajos</a>
+                        <a href="#contacto">Contacto</a>
+                    </nav>
+    
+                    <!-- Icono del menú responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+    
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </header>
+    
+                <div class="fila">
+                    <div class="col">
+                        <h2>Diseñador y Programador Web</h2>
+                        <p>Me especializo en crear interfaces atractivas y funcionales para sitios web, ofreciendo soluciones personalizadas en diseño gráfico, desarrollo web, y soporte técnico. Apasionado por la tecnología y en constante aprendizaje, tengo experiencia en proyectos de e-commerce y sistemas de gestión para restaurantes.</p>
+                        <button class="btn btn-1">Descargar CV</button>
+                    </div>
+                    <div class="col">
+                        <div class="contenedor-img">
+                            <img src="img/foto-inicio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </span>
+
+    <!-- sección SERVICIOS -->
+    <section id="servicios" class="servicios">
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Desarrollo de sitios web personalizados con tecnologías modernas como HTML, CSS, JavaScript y PHP. Ofrezco soluciones eficientes para mejorar la experiencia del usuario y la funcionalidad del sitio.</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                    </div>
+                    <h3>Diseño Gráfico</h3>
+                    <p>Creación de identidades visuales, logotipos y material gráfico para fortalecer la imagen de marca de tu negocio. Trabajo con herramientas como Photoshop e Illustrator para ofrecer un diseño de calidad.</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                    </div>
+                    <h3>Animaciones</h3>
+                    <p>Elaboración de animaciones en video y gráficos en movimiento para presentaciones, sitios web o contenido de redes sociales. Doy vida a tus ideas con un estilo visual atractivo.</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circulo">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Asesoría y gestión de campañas publicitarias en línea para incrementar la visibilidad de tu marca en plataformas como Google Ads y redes sociales, utilizando estrategias de SEO y SEM.</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circulo">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+                    <h3>Soporte Técnico</h3>
+                    <p>Brindo soporte técnico y mantenimiento de sitios web para asegurar su correcto funcionamiento. Resuelvo problemas técnicos y realizo actualizaciones de seguridad para mantener tu sitio protegido.</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circulo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                    <h3>Desarrollo de E-commerce</h3>
+                    <p>Especializado en la creación de tiendas en línea con WooCommerce y WordPress. Desarrollo soluciones de e-commerce para que puedas vender tus productos de manera eficiente y profesional.</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    <!-- Sección de Mis Trabajos -->
+<section class="trabajos" id="trabajos">
+    <h2>Mis Trabajos</h2>
+
+    <!-- Menú de Categorías -->
+    <nav>
+        <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+    </nav>
+
+    <!-- Galería de Trabajos -->
+    <div class="galeria">
+        <!-- Trabajo Semana 1 -->
+        <div class="item disenio">
+            <img src="img/lenguaje-dart-flutter.jpg" alt="">
+            <div class="info">
+                <h3>SEMANA 1</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 2 -->
+        <div class="item programacion">
+            <img src="img/img.png" alt="">
+            <div class="info">
+                <h3>SEMANA 2</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 3 -->
+        <div class="item animaciones">
+            <img src="img/img2.webp" alt="">
+            <div class="info">
+                <h3>SEMANA 3</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 4 -->
+        <div class="item disenio">
+            <img src="img/lenguaje-dart-flutter.jpg" alt="">
+            <div class="info">
+                <h3>SEMANA 4</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 5 -->
+        <div class="item animaciones">
+            <img src="img/img.png" alt="">
+            <div class="info">
+                <h3>SEMANA 5</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 6 -->
+        <div class="item programacion">
+            <img src="img/img2.webp" alt="">
+            <div class="info">
+                <h3>SEMANA 6</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 7 -->
+        <div class="item disenio">
+            <img src="img/lenguaje-dart-flutter.jpg" alt="">
+            <div class="info">
+                <h3>SEMANA 7</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 8 -->
+        <div class="item programacion">
+            <img src="img/img.png" alt="">
+            <div class="info">
+                <h3>SEMANA 8</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 9 -->
+        <div class="item disenio">
+            <img src="img/img2.webp" alt="">
+            <div class="info">
+                <h3>SEMANA 9</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 10 -->
+        <div class="item programacion">
+            <img src="img/lenguaje-dart-flutter.jpg" alt="">
+            <div class="info">
+                <h3>SEMANA 10</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 11 -->
+        <div class="item disenio">
+            <img src="img/img.png" alt="">
+            <div class="info">
+                <h3>SEMANA 11</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 12 -->
+        <div class="item programacion">
+            <img src="img/img2.webp" alt="">
+            <div class="info">
+                <h3>SEMANA 12</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 13 -->
+        <div class="item disenio">
+            <img src="img/lenguaje-dart-flutter.jpg" alt="">
+            <div class="info">
+                <h3>SEMANA 13</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 14 -->
+        <div class="item programacion">
+            <img src="img/img.png" alt="">
+            <div class="info">
+                <h3>SEMANA 14</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 15 -->
+        <div class="item disenio">
+            <img src="img/img2.webp" alt="">
+            <div class="info">
+                <h3>SEMANA 15</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+
+        <!-- Trabajo Semana 16 -->
+        <div class="item programacion">
+            <img src="img/img3.webp" alt="">
+            <div class="info">
+                <h3>SEMANA 16</h3>
+                <a href="#">VER TRABAJO</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- sección contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="info">
+                        <h3>Email:</h3>
+                        <p>williamsfranscampos@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Teléfono:</h3>
+                        <p>+51 981402104</p>
+                    </div>
+                    <div class="info">
+                        <h3>País</h3>
+                        <p>Peru</p>
+                    </div>
+                    <div class="info">
+                        <h3>Ciudad:</h3>
+                        <p>Huancayo</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Correo...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Creado por Williams - 2024 - Desarrollador web</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
