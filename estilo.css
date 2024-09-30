@@ -623,16 +623,34 @@ footer{
         margin: 0 5px;
     }
 
-    .contacto .fila{
-        display:  block !important;
+    .contacto .contenedor-contacto .fila {
+        display: block; /* Cambiar a bloque para mostrar los elementos en una sola columna */
     }
-    .contacto .fila .col{
+
+    .contacto .contenedor-contacto .fila .col {
+        width: 100%; /* Ocupa el 100% del ancho */
+        padding: 10px 0; /* Espaciado interno */
+    }
+
+    .contacto .contenedor-contacto .info {
+        width: 100%; /* La información ocupa el 100% */
+        margin: 10px auto; /* Margen automático */
+        padding: 10px; /* Espaciado interno */
+        border-left: none; /* Remover borde izquierdo */
+        border-bottom: 3px solid #8d8d8d; /* Borde inferior para separar elementos */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .contacto input,
+    .contacto textarea {
+        width: 100%; /* Asegura que ocupen el 100% */
+        margin: 10px auto; /* Separación entre campos */
+    }
+
+    .contacto .btn {
+        width: 100%;
         text-align: center;
-        width: 100% !important;
-    }
-    .contacto .fila .col .info{
-        float: left;
-        font-size: 12px;
-        width: 25%;
+        padding: 15px 0; /* Espaciado más amplio */
+        margin-top: 20px;
     }
 }
